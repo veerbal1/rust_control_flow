@@ -5,6 +5,7 @@ fn main() {
     let number_outcome = functions::sign_classifier(number);
     println!("Number is {}:", number_outcome);
 
+    functions::fizz_buzz();
 
-    functions::fizz_buzz()
+    functions::grade_to_letter();
 }

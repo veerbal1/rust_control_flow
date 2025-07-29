@@ -21,3 +21,29 @@ pub fn fizz_buzz() {
         }
     }
 }
+
+pub fn grade_to_letter() {
+    println!("--------------");
+    for i in 1..=100 {
+        match i {
+            90..=100 => {
+                println!("A")
+            }
+            80..90 => {
+                println!("B")
+            }
+            60..80 => {
+                println!("C")
+            }
+            50..60 => {
+                println!("D")
+            }
+            34..50 => {
+                println!("E")
+            }
+            _ => {
+                println!("F")
+            }
+        }
+    }
+}
