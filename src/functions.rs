@@ -47,3 +47,21 @@ pub fn grade_to_letter() {
         }
     }
 }
+
+pub fn collatz(input: u128) {
+    println!("----collatz------");
+    let mut i = input;
+    let mut step = 0;
+
+    while i != 1 {
+        step += 1;
+        if i % 2 == 0 {
+            println!("{} {}", i, i / 2);
+            i = i / 2;
+        } else {
+            println!("{} {}", i, 3 * i + 1);
+            i = 3 * i + 1;
+        }
+    }
+    println!("Step {}", step);
+}
