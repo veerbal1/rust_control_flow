@@ -1,3 +1,7 @@
+mod functions;
+
 fn main() {
-    println!("Hello, world!");
+    let number = 22;
+    let number_outcome = functions::sign_classifier(number);
+    println!("Number is {}:", number_outcome);
 }
