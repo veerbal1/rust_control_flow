@@ -7,3 +7,17 @@ pub fn sign_classifier(input: i32) -> String {
         return String::from("Zero");
     }
 }
+
+pub fn fizz_buzz() {
+    for i in 1..=100 {
+        if (i % 3 == 0) && (i % 5 == 0) {
+            println!("FizzBuzz {}", i);
+        }
+        if i % 3 == 0 {
+            println!("Fizz {}", i);
+        }
+        if i % 5 == 0 {
+            println!("Buzz {}", i);
+        }
+    }
+}
